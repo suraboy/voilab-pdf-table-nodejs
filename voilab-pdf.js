@@ -91,7 +91,6 @@ const generateSaleVatTable = (doc, table, reports) => {
         // add events (here, we draw headers on each new page)
         .onPageAdded(function (tb) {
             tb.addHeader();
-            tb.onRowHeightCalculate();
         });
     //loop data in sale vat query
     for (i = 0; i < reports.length; i++) {
